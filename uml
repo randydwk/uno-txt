@@ -1,0 +1,36 @@
+Uno
+
+    - static Joueur joueur
+    - static ArrayList<Joueur> joueursIA
+
+    - static ArrayList<Carte> pioche
+    - static ArrayList<Carte> defausse
+   
+    + main
+
+    + RefillPioche
+        // met toutes les carte de la defausse dans la pioche et mélange la pioche
+
+
+Symbole (Enum)
+    ZERO UN DEUX TROIS QUATRE CINQ SIX SEPT HUIT NEUF SENS PASSE PLUSDEUX PLUSQUATRE CHANGECOULEUR
+
+
+Couleur (Enum)
+    JAUNE BLEU VERT ROUGE (peut importe la couleur si le symbole est +4 ou un changement de couleur)
+
+
+Carte
+    - Symbole chiffre
+    - Couleur couleur    
+
+    + void toString qui affiche le bon symbole et la bonne couleur
+
+
+Joueur
+    - ArrayList<Carte> deck
+    
+    + void PiocherCarte
+    
+    + void JouerCarte
+        // interactions utilisateurs ou ia
